@@ -73,5 +73,5 @@ test_cases = [
 
 @pytest.mark.parametrize('arguments,expected_output,fail_message', test_cases)
 def test_template(arguments, expected_output, fail_message):
-    actual = arithmetic_arranger(*arguments)
+    actual = arithmetic_arranger(arguments)
     assert actual == expected_output, fail_message
